@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements QuizRecyclerViewA
                 int ansered=0;
                 for(int i=0;i<list.size();i++){
 
-                    Log.e("ITEM", "pos "+i+ list.get(i).getSelectedposition());
+//                    Log.e("ITEM", "pos "+i+ list.get(i).getSelectedposition());
 //                    Log.e("ITEM", "position"+ list.get(i).getSublist().get(list.get(i).getSelectedposition()));
                     if (list.get(i).isIschecked()){
                         ansered++;
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements QuizRecyclerViewA
                     }
 
                 }
-                Log.i("Score","s "+ score);
+//                Log.i("Score","s "+ score);
 
                 final Dialog dialog = new Dialog(MainActivity.this);
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements QuizRecyclerViewA
 
     @Override
     public void onNumberIncremented(int adapterPosition, int i) {
-        Log.e("ITEM", "main"+adapterPosition+" sub "+ i);
+//        Log.e("ITEM", "main"+adapterPosition+" sub "+ i);
         list.get(adapterPosition).setSelectedposition(i);
         list.get(adapterPosition).setIschecked(true);
 

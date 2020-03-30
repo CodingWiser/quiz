@@ -102,9 +102,9 @@ public class QuizRecyclerViewAdapter extends
 //                    }
 //                    lastCheckedRadioGroup = radioGroup;
                     quizList.get(getAdapterPosition()).setSelectedposition(i);
-                    Toast.makeText(QuizRecyclerViewAdapter.this.context,
-                            "Radio button clicked " + getAdapterPosition()+ " "+radioGroup.getCheckedRadioButtonId(),
-                            Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(QuizRecyclerViewAdapter.this.context,
+//                            "Radio button clicked " + getAdapterPosition()+ " "+radioGroup.getCheckedRadioButtonId(),
+//                            Toast.LENGTH_SHORT).show();
                     mListener.onNumberIncremented(getAdapterPosition(),radioGroup.getCheckedRadioButtonId());
 
                 }
